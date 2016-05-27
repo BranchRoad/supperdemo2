@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         long ct =System.currentTimeMillis();
         if (ct-lastTime>2000){
-            Toast.makeText(this,"再次点击退出程序",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "再次点击退出程序", Toast.LENGTH_SHORT).show();
             lastTime=ct;
         }else {
             super.onBackPressed();
